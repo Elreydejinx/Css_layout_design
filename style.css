@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+}
+
+header {
+  background-image: image("dojo_1.jpg");
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  background-color: cadetblue;
+  border-radius: 45px;
+  align-items: center;
+}
+
+ul li * {
+  padding: 0 20px;
+  text-decoration: none;
+  color: rgb(2, 3, 3);
+  display: inline-block;
+}
+
+li a::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 0;
+  background: #c4c4f7;
+  transition: all 0.5s;
+}
+
+li a:hover::after {
+  width: 100%;
+}
+
+main {
+  display: flex;
+  border: 1px solid;
+  height: calc(100vh - 100px);
+  align-items: center;
+  justify-content: center;
+}
+
+.orange {
+  border-radius: 350px;
+  background: orange;
+  width: 300px;
+  height: 300px;
+}
+
+.green {
+  border-radius: 350px;
+  background: green;
+  width: 300px;
+  height: 300px;
+}
+
+footer {
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+image {
+  justify-content: start;
+  align-items: center;
+}
+
+@media (min-width: 600px) {
+}
